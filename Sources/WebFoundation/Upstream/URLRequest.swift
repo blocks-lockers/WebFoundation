@@ -151,9 +151,6 @@ public struct URLRequest: Equatable, Hashable {
     /// in done in an HTTP POST request.
     public var httpBody: Data?
     
-    @available(*, unavailable, message: "httpBodyStream is not yet available in WebFoundation")
-    public var httpBodyStream: Any?
-    
     /// `true` if cookies will be sent with and set for this request; otherwise `false`.
     public var httpShouldHandleCookies = true
     
